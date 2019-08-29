@@ -1,0 +1,43 @@
+h4,
+body {
+  margin: 0px !important;
+}
+.head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .header {
+    text-align: center;
+    height: 50vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav {
+    margin-top: -10px;
+    margin-bottom: 6em;
+    a {
+      text-decoration: none;
+      padding: 1em;
+      background-color: gray;
+      border: 2px solid gray;
+      color: white;
+      font-weight: bold;
+      &:not(:first-child) {
+        margin-left: 1em;
+      }
+      &:hover {
+        background-color: white;
+        color: gray;
+        border: 2px solid gray;
+      }
+    }
+  }
+
+  .poster-part {
+  }
+}
