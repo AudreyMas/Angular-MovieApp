@@ -1,54 +1,53 @@
-ul{
-  display: flex;
-  width: 90vw;
-  overflow-x: scroll;
-  list-style: none;
-  padding: 0;
-  li{
+// ul{
+//   display: flex;
+//   width: 90vw;
+//   overflow-x: scroll;
+//   list-style: none;
+//   padding: 0;
+//   li{
 
-    width: 350;
-    background-color: white;
-    margin-bottom: 1em;
-    margin-right: 1em;
-    box-shadow: 0px 6px 21px -7px rgba(0,0,0,0.50);
+//     width: 350;
+//     margin-bottom: 1em;
+//     margin-right: 1em;
+//     box-shadow: 0px 6px 21px -7px rgba(0,0,0,0.50);
 
 
-    img{
-      width: inherit;
-      position: relative;
+//     img{
+//       width: inherit;
+//       position: relative;
             
-    }
-    .bottom-card{
-      padding: 10px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;      justify-content: space-between;
-      padding: 15px 5px;
-      h4{
-      margin: 0px;
-      }
-      span{
-        font-size: 12px;
-      }
-    }
-  }
-}
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
+//     }
+//     .bottom-card{
+//       padding: 10px 20px;
+//       display: flex;
+//       align-items: center;
+//       justify-content: space-between;      justify-content: space-between;
+//       padding: 15px 5px;
+//       h4{
+//       margin: 0px;
+//       }
+//       span{
+//         font-size: 12px;
+//       }
+//     }
+//   }
+// }
+// /* width */
+// ::-webkit-scrollbar {
+//   width: 10px;
+// }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1; 
-}
+// /* Track */
+// ::-webkit-scrollbar-track {
+//   background: #f1f1f1; 
+// }
  
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888; 
-}
+// /* Handle */
+// ::-webkit-scrollbar-thumb {
+//   background: #888; 
+// }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555; 
-}
+// /* Handle on hover */
+// ::-webkit-scrollbar-thumb:hover {
+//   background: #555; 
+// }

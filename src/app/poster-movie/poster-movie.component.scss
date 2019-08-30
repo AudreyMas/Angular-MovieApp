@@ -1,43 +1,66 @@
-ul {
+.page {
   display: flex;
-  width: 90vw;
-  overflow-x: scroll;
-  list-style: none;
-  padding: 0;
-  
-  @media screen and (min-width: 768px) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    overflow-x: hidden;
-  }
-  li {
-    width: 215px;
-    background-color: white;
-    margin-bottom: 2em;
-    margin-right: 2em;
-    box-shadow: 0px 6px 21px -7px rgba(0, 0, 0, 0.5);
-    &:hover {
-      cursor: pointer;
+  flex-direction: column;
+  .title{
+    text-align: center;
+    margin-bottom: 4em;
+    input{
+      padding: 5px;
+      width: 50%;
+      border: 2px solid black;
+      font-style: italic;
+      font-size: 13px;
       box-shadow: 0px 6px 21px -7px rgba(0, 0, 0, 0.2);
+    &:hover{
+      box-shadow: 0px 6px 21px -7px rgba(0, 0, 0, 0);
+
     }
-    .img {
-      img {
-        width: inherit;
-        position: relative;
-      }
     }
-    .bottom-card {
-      padding: 10px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      justify-content: space-between;
-      padding: 15px 5px;
-      h4 {
-        margin: 0px;
+  }
+  ul {
+    display: flex;
+    width: 90vw;
+    overflow-x: scroll;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      overflow-x: hidden;
+    }
+    li {
+      width: 200px;
+      background-color: white;
+      margin-bottom: 2em;
+      margin-right: 2em;
+      box-shadow: 0px 6px 21px -7px rgba(0, 0, 0, 0.5);
+      &:hover {
+        cursor: pointer;
+        box-shadow: 0px 6px 21px -7px rgba(0, 0, 0, 0.2);
       }
-      span {
-        font-size: 12px;
+      .img {
+        img {
+          width: inherit;
+          position: relative;
+        }
+      }
+      .bottom-card {
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px;
+        h4 {
+          width: 60%;
+          margin: 0px;
+          font-size: 13px;
+          // align-self:flex-start;
+        }
+        span {
+          font-size: 11px;
+        }
       }
     }
   }

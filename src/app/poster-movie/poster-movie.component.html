@@ -1,60 +1,19 @@
 <div class='movie page'>
-  <h3>PUPULAR MOVIES</h3>
-  <input placeholder="search bar" />
+  <div class='title'>
+    <h1>Popular Movies</h1>
+    <input placeholder="movie title" />
+  </div>
 
   <ul class="list-poster">
-    <li routerLink="/movie-detail">
+    <li *ngFor="let data of posterMovie" routerLink="/movie-detail">
       <div class="img">
-        <img src='http://fr.web.img4.acsta.net/c_215_290/pictures/19/02/25/12/06/2908996.jpg' />
+        <img src="http://image.tmdb.org/t/p/w200/{{data.poster_path}}" />
       </div>
       <div class="bottom-card">
-        <h4>CLICK</h4>
+
+        <h4>{{ data.title }}</h4>
         <span>2019</span>
-      </div>
-    </li>
-    <li>
-      <div class="img">
-        <img src='http://fr.web.img4.acsta.net/c_215_290/pictures/19/02/25/12/06/2908996.jpg' />
-      </div>
-      <div class="bottom-card">
-        <h4>TITRE</h4>
-        <span>2019</span>
-      </div>
-    </li>
-    <li>
-      <div class="img">
-        <img src='http://fr.web.img4.acsta.net/c_215_290/pictures/19/02/25/12/06/2908996.jpg' />
-      </div>
-      <div class="bottom-card">
-        <h4>TITRE</h4>
-        <span>2019</span>
-      </div>
-    </li>
-    <li>
-      <div class="img">
-        <img src='http://fr.web.img4.acsta.net/c_215_290/pictures/19/02/25/12/06/2908996.jpg' />
-      </div>
-      <div class="bottom-card">
-        <h4>TITRE</h4>
-        <span>2019</span>
-      </div>
-    </li>
-    <li>
-      <div class="img">
-        <img src='http://fr.web.img4.acsta.net/c_215_290/pictures/19/02/25/12/06/2908996.jpg' />
-      </div>
-      <div class="bottom-card">
-        <h4>TITRE</h4>
-        <span>2019</span>
-      </div>
-    </li>
-    <li>
-      <div class="img">
-        <img src='http://fr.web.img4.acsta.net/c_215_290/pictures/19/02/25/12/06/2908996.jpg' />
-      </div>
-      <div class="bottom-card">
-        <h4>TITRE</h4>
-        <span>2019</span>
+
       </div>
     </li>
 

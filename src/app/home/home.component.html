@@ -1,13 +1,16 @@
 <div class="head">
   <div class="header">
     <div class="title">
-      <h1>MANAGE </h1>
-      <h2>Oganise your popular movies and tv shows</h2>
+      <h1 class="neon">MANAGE </h1>
+      <!-- <span>Oganise your popular movies and tv shows</span> -->
+      <span>Program what you have already watch and what you want watch</span>
     </div>
   </div>
   <nav>
-    <a class="btn" routerLink="/shows" routerLinkActive="active">TV Shows</a>
-    <a class="btn" routerLink="/movies" routerLinkActive="active">Movies</a>
+    <div class="btn" routerLink="/shows" routerLinkActive="active"> <a  >Tv shows</a>
+    </div>
+    <div  class="btn" routerLink="/movies" routerLinkActive="active"> <a >Movies</a>
+    </div>
   </nav>
   <router-outlet></router-outlet>
 </div>
