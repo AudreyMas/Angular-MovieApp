@@ -19,22 +19,17 @@ export class MoviedbService {
     return this.http.jsonp(url, "")
   }
   
-  getQueryforMovie(query: string) {
-    const url = `https://api.themoviedb.org/3${query}?api_key=${this.apikey}&language=en&callback=JSONP_CALLBACK`
-    return this.http.jsonp(url, "")
-  }
+
   getDiscoverMovies() {
     return this.getQuery("/discover/movie?sort_by=popularity.desc").pipe(
       map((data: any) => data.results)
     )
   }
-  getSearchMovie(term: string) {
-    return this.getQuery(`/search/movie?query=${term}&sort_by=popularity.desc`
-    ).pipe(map((data: any) => data.results));
-  }
-  getMovie(id: string) {
-    return this.getQueryforMovie(`/movie/${id}`).pipe(
-      map((data: any) => data)
+
+  getDiscoverTV() {
+    return this.getQuery("/discover/tv?sort_by=popularity.desc").pipe(
+      map((data: any) => data.results)
     )
   }
+
 }

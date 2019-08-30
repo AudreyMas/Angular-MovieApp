@@ -1,1 +1,22 @@
-<h4>TV SHOW</h4>
+<div class='movie page'>
+    <div class='title'>
+      <h1>Popular Tv shows</h1>
+      <input placeholder="tv show title" />
+    </div>
+  
+    <ul class="list-poster">
+      <li *ngFor="let data of posterMovie" routerLink="/movie-detail">
+        <div class="img">
+          <img src="http://image.tmdb.org/t/p/w200/{{data.poster_path}}" />
+        </div>
+        <div class="bottom-card">
+  
+          <h4>{{ data.original_name }}</h4>
+          <span>{{data.release_date}}</span>
+  
+        </div>
+      </li>
+  
+    </ul>
+  
+  </div>
