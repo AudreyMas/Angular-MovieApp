@@ -1,25 +1,19 @@
-
 <div class='movie-page'>
-  <h3>PUPULAR MOVIES</h3>
-  <input placeholder="search bar"/>
+  <h3>Popular</h3>
+  <input placeholder="search bar" />
 
-
-  
-
-
-<ul class="list-poster">
+  <ul class="list-poster" *ngFor="let data of posterMovie">
     <li routerLink="/movie-detail">
-        <div class="img">
-          <img src='http://fr.web.img4.acsta.net/c_215_290/pictures/19/02/25/12/06/2908996.jpg' />
-        
+      <div class="img">
+        <img src={{data.poster_path}} />
 
-        </div>
-        <div class="bottom-card">
-          <h4>title</h4>
-          <span>2019</span>
-        </div>
-      </li>
-      
-</ul>
+      </div>
+      <div class="bottom-card">
+        <h4 >{{ data.title }}</h4>
+        <span>2019</span>
+      </div>
+    </li>
+
+  </ul>
 
 </div>

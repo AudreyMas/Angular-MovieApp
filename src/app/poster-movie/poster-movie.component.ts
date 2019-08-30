@@ -9,6 +9,7 @@ import { MoviedbService } from "../services/moviedb.service";
 })
 export class PosterMovieComponent implements OnInit {
 
+
   posterMovie: any[] = [];
   loading: boolean;
 
@@ -25,6 +26,7 @@ export class PosterMovieComponent implements OnInit {
    }
 
   ngOnInit() {
+    this.posterMovie
   }
 
 }
