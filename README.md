@@ -1,4 +1,4 @@
-# MANAGE APP -- Angular exercice 
+# MANAGE APP --
 ![](Manage-App.gif)
 
 
